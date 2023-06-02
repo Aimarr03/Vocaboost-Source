@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <link rel = "stylesheet" href ="css/general.css">
+        <link rel = "stylesheet" href = "css/exercising.css">
+        <link rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+      <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+      <!--Google Fonts-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    </header>
+    <body>
+        <div id="darker-background"></div>
+        <div class="content-container">
+            <h3 id="headline-type">Vocab Quiz</h3>
+            <div class="header-container">
+                <div id="question-number">
+                    <h3>Question <span id="current-q">1</span>/<span id ="max-q"></span></h3>
+                </div>
+                <div class="additional-info">
+                    <div class="daftar-soal">
+                        <h5>Daftar Soal</h5>
+                    </div>
+                    <div class="timer-container">
+                        <div class="timer-remaining">
+                            <h4>Time Remaining:</h4>
+                        </div>
+                        <div class="timer">
+                            <h4 id ="time">60</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <h5 id="description-question">Answer the Question Below</h5>
+            <div class="exercise-container">
+                <div class="text-container">
+                    <div class="question-content">
+                        <div id="text">Often people use the term personality as an easy way of explaining a person’s behavior. Someone says that “she is a good saleswoman because she is an extrovert” or “her uncle is hard to get along with because he has an authoritarian personality”. Actually, the concept of personality is a descriptive one. It relates to specific behavioral traits of an
+                            individual. It describes the individual’s specific adoption to his or her cultural surroundings.
+                            
+                            We might define personality as the basic organization of people that determines the uniqueness of their interactions with themselves, with others, and with nonhuman aspects of their environment. The basic organization refers to the structure of the personality of how it is put together, and the relationships among the various parts. It concerns the total physical, intellectual, and emotional structure of the individual. 
+                            The personality structure determines the uniqueness of the individual’s interactions. No two personalities are alike.
+                            All persons have their own way of interacting with themselves and with others.
+                            
+                            Human interaction always brings about some change in the individual. These changes take place very slowly. It is generally not noticeable from day to day. Nevertheless, the personality is changing constantly. Personalities don’t all change at the same rate. For example, the child changes very rapidly in both physical and intellectual aspects of personality. The adult may change very slowly. However, every personality undergoes constant, gradual change as
+                            individual interacts with others.
+                            
+                                         The personality of individual with their basic organization is blending of all factors present in their particular social situation with whatever traits they inherit biologically. This brings us to of the age-old questions: which is more
+                            important: hereditary or environmental?
+                            </div>
+                    </div>
+                </div>
+                <div class="question-answer-nav">
+                    <div class="answer-container">
+                        <div id="answer-description">
+                            <h4>Choose answer below:</h4>
+                        </div>
+                        <div id="question">
+                            <h5>As used in line 19, "demands" most nearly means</h5>
+                        </div>
+                        <div id="options"></div>
+                    </div>
+                    <div class="navigation-button">
+                        <button id="left-arrow" onclick = "prevQuestion()"><i class="ri-arrow-left-line"></i></button>
+                        <button id = "right-arrow" onclick = "nextQuestion()"><i class="ri-arrow-right-line"></i></button>
+                        <button id="done-button" onclick = "submission()">SUBMIT</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script src ="js/exercising.js"></script>
+        <div id ="submit-button">
+            <div class="text-submit">
+                <h4>Are you sure you want to submit?</h5>
+                <p>All the progress will be saved</p>
+            </div>
+            <div class="the-button">
+                <button id="yes-button" onclick = "submitQuiz()">yes</button>
+                <button id="no-button" onclick = "returnQuiz()">no</button>
+            </div>
+        </div>
+    </body>
+</html>

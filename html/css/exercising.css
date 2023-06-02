@@ -1,0 +1,225 @@
+html, body {
+    margin: 0;
+    padding: 0;
+  }
+.daftar-soal{
+    color: #f5f5f5;
+    font-weight: 700;
+    border-radius: 25px;
+    background-color: #4a77d2;
+    padding: 10px 25px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.4) ;
+}
+.timer-container{
+    display:flex;
+    flex-direction: row;
+    border-radius: 25px;
+    background-color: #248cc3;
+    padding: 10px 25px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.4) ;
+}
+.timer-container h4{
+    font-size: 12px;
+    color: #f5f5f5;
+}
+#time{
+    padding-left: 20px;
+    font-size: 14px;
+}
+#darker-background{
+    margin: 0;
+    padding: 0;
+    top: 0;
+    position:fixed;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    transition: all 0.4s ease;
+    display: none;
+    z-index: 1000;
+}
+.header-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.additional-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    column-gap: 30px;
+}
+#second{
+    color: #FF2E00;
+}
+.content-container{
+    width: 95%;
+    margin: 30px auto 90px auto;
+    border:#A6ABBD 1px solid;
+    padding: 20px 40px;
+    border-radius: 30px;
+    background-color: #f3f3f3;
+}
+.exercise-container{
+    display:flex;
+    justify-content: space-between;
+    margin: 10px 0;
+    column-gap: 25px;
+}
+.text-container{
+    padding: 10px 30px 30px 30px;
+    background-color: #E6E6E6;
+    width: 50%;
+    border: solid black 2px;
+    border-radius: 10px;
+    margin: 25px 0;
+    box-shadow: 2px 10px 30px rgba(0,0,0,0.4);
+}
+.answer-container{
+    padding: 30px;
+    background-color: #E6E6E6;
+    width: 100%;
+    border: solid black 2px;
+    border-radius: 10px;
+    margin: 25px 0 25px auto;
+    box-shadow: 2px 10px 30px rgba(0,0,0,0.4);
+}
+.question-content{
+    margin-top: 20px;
+}
+.question-answer-nav{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+li{
+    margin: 10px 0px 10px 5px;
+}
+.navigation-button{
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#left-arrow{
+    border: 2px solid;
+    border-radius: 50%;
+    padding: 0 5px;
+    background: none;
+    font-size: 20px;
+    bottom: 10px;
+    transition: all 0.4s ease;
+}
+#left-arrow:hover{
+    cursor: pointer;
+    transform: translateX(-6px);
+}
+#right-arrow:hover{
+    cursor: pointer;
+    transform: translateX(6px);
+}
+#right-arrow{
+    border: 2px solid;
+    border-radius: 50%;
+    padding: 0 5px;
+    background: none;
+    font-size: 20px;
+    transition: all 0.4s ease;
+}
+#done-button{
+    font-size: 15px;
+    font-weight: 800;
+    color:#f5f5f5;
+    padding: 2.5px 20px;
+    border: none;
+    border-radius: 30px;
+    display: none;
+    background-color:#248cc3;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.4);
+    transition: all 0.4s ease;
+    cursor: pointer;
+}
+#done-button:hover{
+    text-shadow: 0px 0px 3px #FD0202;
+    font-weight:700;
+    font-size: 135%;
+}
+.option-button {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.option-button input[type="radio"] {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    margin-right: 10px;
+    opacity: 0;
+    cursor: pointer;
+}
+.custom-radio{
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #412727;
+    margin-right: 10px;
+}
+.option-button input[type="radio"]:checked+.custom-radio{
+    background-color: #412727;
+}
+#submit-button{
+    background-color: #FFFFFF;
+    border: 0px;
+    border-radius: 15px;
+    padding:25px 50px 70px 50px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    width:100%;
+    bottom: -100%;
+    transition: all 0.5s ease;
+    z-index: 1005;
+}
+.the-button{
+    display: flex;
+    column-gap: 15px;
+}
+#yes-button{
+    background: linear-gradient(330deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), rgba(96, 2, 224, 0.28);
+    background-blend-mode: soft-light, normal;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px #A6ABBD;
+    border-radius: 40px;
+    padding: 10px 40px;
+    color: #f5f5f5;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#yes-button:hover{
+    transform: translate(3px,3px);
+    box-shadow:-1px -1px 3px #FAFBFF, 1px 1px 3px #A6ABBD;
+}
+#no-button{
+    background: linear-gradient(330.37deg, rgba(0, 0, 0, 0.4) 4.29%, rgba(255, 255, 255, 0.4) 95.6%), rgba(54, 46, 78, 0.28);
+    background-blend-mode: soft-light, normal;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: -5px -5px 10px #FAFBFF, 5px 5px 10px #A6ABBD;
+    border-radius: 40px;
+    padding: 10px 40px;
+    color: #f5f5f5;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 18px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+#no-button:hover{
+    transform: translate(3px,3px);
+    box-shadow:-1px -1px 3px #FAFBFF, 1px 1px 3px #A6ABBD;
+}

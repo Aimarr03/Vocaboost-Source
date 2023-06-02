@@ -1,0 +1,331 @@
+body{
+    background-color:#FFF59F ;
+    
+}
+.judul{
+    position:absolute;
+    font-size:50px;
+    left: 133px;
+    display: flex;
+    flex-direction: column;
+}
+.judul1{
+  position:absolute;
+  font-size:50px;
+  top:50px;
+  left: 135px;
+  display: flex;
+  flex-direction: column;
+}
+    
+
+.tabel{
+  position: absolute;
+  width: 80%;
+  height: 470px;
+  left: 133px;
+  top: 170px;
+  background: #FFFFFF;
+  border: 1px solid #000000;
+  border-radius: 10px;
+  box-shadow: -10px 10px 10px rgba(0, 0, 1, 1);
+  margin:auto 20px auto;
+}
+.kolom1{
+    position: absolute;
+    width: 180px;
+    height: 150px;
+    left: 100px;
+    top: 70px;
+    background: #D9D9D9;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.box {
+    width: 450px;
+    height: 67px;
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    position:relative;
+    left:400px;
+    top: 60px;
+    
+  }
+  .text {
+    font-size: 19px;
+    font-weight: 700;
+    font-family: 'Inter';
+    font-style: normal;
+  }
+  .garis{
+    position: absolute;
+        width: 120%;
+        height: 0px;
+        left: 70;
+        top: 800px;
+        border: 1px solid #000000;
+  }
+  .tabel2{
+    box-sizing: border-box;
+    position: absolute;
+    width: 80%;
+    height: 2000px;
+    left: 20px;
+    top: 900px;
+    background: #FFFFFF;
+    border: 3px solid #000000;
+    box-shadow: 0px 20px 6px rgba(0, 0, 0, 0.25);
+    margin:auto 140px auto;
+
+  }
+  .judul2{
+    position: absolute;
+     width: 80%;
+     height: 171px;
+     left: 100px;
+     top: 20px;
+     font-size: 50px;
+     font-family: 'Inter';
+     font-style: normal;
+     font-weight: 700;
+  }
+  .kolom2{
+    box-sizing: border-box;
+    position: absolute;
+    width: 80%;
+    height: 409.39px;
+    left: 100px;
+    top: 190px;
+    background: #E8E5CF;
+    border: 1px solid #000000;
+    border-radius: 10px;
+  }
+  .soal1{
+    position: absolute;
+    width: 60%;
+    height: 144px;
+    left: 125px;
+    top: 190px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 36px;
+    text-align: justify;
+    color: #000000;
+    margin:auto 20px auto;
+  }
+  .kolom3{
+    box-sizing: border-box;
+    position: absolute;
+    width:80%;
+    height: 1150px;
+    left: 100px;
+    top: 720px;
+    background: #E8E5CF;
+    border: 1px solid #000000;
+    border-radius: 10px;
+  }
+  .penjelasan{
+    position: absolute;
+    width: 80%;
+    height: 48px;
+    left: 125px;
+    top: 720px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: justify;
+
+  }
+  .options{
+    position: absolute;
+    width: 80%;
+    height: 168px;
+    left: 190px;
+    top: 800px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 49px;
+    color: #4DA35F;
+  }
+  .option {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  .option:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .option::before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border: 1px solid #000000;
+    border-radius: 50%;
+    margin-right: 10px;
+    vertical-align: middle;
+    background-color: transparent;
+  }
+  
+  .option.selected::before {
+    background-color: #000000;
+  }
+  
+  .option.selected:hover::before {
+    background-color: #ffffff;
+  }
+  .option {
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  
+    .option.selected::before {
+    background-color: #4DA35F;
+  }
+  
+  .option.selected:hover::before {
+    background-color: #A35C4D;
+  }
+  
+  .option.offers{
+    color:#4DA35F;
+    position: relative;
+   
+  }
+  .option:not(.offers){
+    color:#A35C4D;
+    position: relative;
+  }
+  .explanation{
+    position: absolute;
+    width: 826.23px;
+    height: 48px;
+    left: 125px;
+    top: 1050px;
+    font-family: 'Poppins',sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: justify;
+    color: #000000;
+    margin: auto 10px auto;
+  }
+  .Explain, .Explain2, .Explain3 {
+    position: absolute;
+    width: 603.03px;
+    height: 216px;
+    left: 190px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: justify;
+    color: #000000;
+  }
+  .Explain{
+    top:1100px;
+  }
+  .Explain2 {
+    top: 1300px;
+  }
+  .Explain3 {
+    top: 1500px;
+  }
+  .navigation {
+    position: absolute;
+    bottom: 30px;
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .previous,.next,.indicator{
+    position: absolute;
+    left: 255px;
+    top: 2100px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration-line: underline;
+    color: #000000;
+    margin-right: auto;
+  }
+  .previous{
+    width: 234.99px;
+    height: 38.25px;
+  }
+  .next{
+    width: 190.87px;
+    height: 38.25px;
+    left: 1045px;
+    top: 2100px;
+    text-decoration-line: underline;
+  }
+  .previous[disabled],
+  .next[disabled] {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  .indicator {
+    width: 80%;
+    height: 67.99px;
+    left: 730px;
+    top: 2085px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .numerator,
+  .denominator,
+  .separator {
+    display: inline-block;
+  }
+  
+  .separator {
+    margin: 0 5px;
+  }
+  .Finish{
+    position: absolute;
+    width: 300px;
+    height: 70px;
+    left: 600px;
+    top: 2950px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: auto 20px auto;
+} 
+
+.finish[disabled]{
+  opacity: 0.5;
+  cursor: not-allowed;
+}

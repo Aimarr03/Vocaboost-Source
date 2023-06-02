@@ -1,0 +1,142 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.search-box{
+    margin: 10px 10px 20px;
+    /*display:flex;*/
+    justify-content: flex-end;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: none;
+}
+.menu-panel h4{
+    text-align: center;
+    margin-bottom: 25px;
+}
+.sidebar{
+    position: relative;
+    width: 300px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: #0F1621;
+    padding: 25px;
+    color: #f5f5f5;
+    font-weight: 200;
+}
+.profile{
+    margin-bottom: 35px;
+}
+.menu-item{
+    margin: 6px 0;
+}
+.menu-item i{
+    font-size: 24px;
+}
+.menu-item span{
+    font-size: 16px;
+    margin-left: 12px;
+    vertical-align: middle;
+}
+.sub01-menu{
+    display: none;
+    margin-top: 5px;
+    margin-left: 28px;
+}
+.submenu02-menu.show{
+    display: block;
+}
+.submenu02-menu{
+    display: none;
+    margin-left: 40px;
+}
+.submenu02-menu.show{
+    display: block;
+}
+.submenu02-menu i{
+    font-size: 20px;
+}
+.submenu02-menu span{
+    font-size: 12px;
+    margin-left: 12px;
+    vertical-align: middle;
+}
+.content-page{
+    position: relative;
+    width: 84%;
+    margin: 5px auto;
+}
+.search{
+    border: none;
+    margin: 0;
+    background-color: #f5f5f5;
+    padding: 8px 18px;
+    
+}
+.search-input{
+    padding: 8px 8px;
+    border: none;
+    margin: 0;
+    background-color: #f5f5f5;
+}
+.page-format{
+    display: flex;
+}
+.search-input::placeholder{
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color:rgb(30, 30, 30);
+    border: none;
+    outline: 0;
+}
+.ri-search-line{
+    font-size: 16px;
+}
+#title{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+.menu-panel{
+    width: 80%;
+    background-color: #E6E6E6;
+    margin: 0 auto 20px auto;
+    padding: 0 20px 20px 20px;
+    border: solid #0F1621 3px;
+    border-radius: 15px;
+    box-shadow: 2px 10px 30px rgba(0,0,0,0.4);
+}
+.content-panel{
+    display: flex;
+    justify-content: space-between;
+}
+.difficulty-option{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    text-align: center;
+}
+.difficulty-option a{
+    background-color: #F5E9C9;
+    margin-bottom: 15px;
+    padding: 5px 0;
+    border: solid #0F1621 1px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    color:#0F1621;
+    transition: all 0.4s ease;
+}
+.difficulty-option a:hover{
+    transform: translateY(-5px);
+}
+#line-seperator{
+    margin-top:50px;
+    margin-bottom:20px;
+    width:100%;
+    height:2px;
+    background-color: #E6E6E6;
+}
