@@ -145,17 +145,17 @@ const quizData = [
         questions: quizData.map((item) => item.question),
         choices: quizData.map((item,index) => {
           return{
-            question:item.question,
-            choice: item.options[answers[index]],
-            correctAnswer: item.options[item.correctAnswer]
+            options:item.options,
+            choice: answers[index],
+            correctAnswer: item.correctAnswer
           };
         }),
         userScore: score
       };
 
-      localStorage.setItem("quizResult", JSON.stringify(userQuizData));
-
-      window.location.href = "result.html";
+      const parameterValue = encodeURIComponent(JSON.stringify(userQuizData));
+      const url = `result.html?data=${parameterValue}`;
+      window.location.href = url;
     }
 
     // Function to check the answers

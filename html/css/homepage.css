@@ -7,8 +7,8 @@
     list-style: none;
 }
 body{
-    background-image: url('/Image/nav-background.webp');
     background-color: #FFF59F;
+    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('nav-background.webp') no-repeat;
 }
 header{
     position: fixed;
@@ -60,28 +60,30 @@ header{
 .description-box{
     width: 84%;
     background-color:rgba(255, 255, 255, 0.48);
-    position: absolute;
-    top: 100px;
-    left: 8%;
-    right: 8%;
+    margin: 80px auto;
     border-radius: 40px;
     
 }
 .description-text{
-    padding: 70px;
+    padding: 70px 0px 70px 70px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     flex-wrap: wrap;
 }
+.description-headline{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
 .description-headline h2{
-    font-size: 48px;
+    font-size: 40px;
     font-weight: 800;
 }
 .description-headline h5{
-    margin-top: 32px;
+    margin-top: 24px;
     font-size: 16px;
-    font-weight: 200;
+    font-weight: 300;
 }
 .description-image img{
     display: block;
@@ -90,7 +92,13 @@ header{
     height: 100%;
 }
 .First-Button{
-    margin-top: 50px;
+    margin-top: 20px;
+    width: 75%;
+    display: none;
+    grid-template-columns: 1fr 1fr;
+}
+.Second-Button{
+    margin-top: 20px;
     width: 75%;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -117,7 +125,7 @@ header{
     border:2px solid #C26969;
     font-size: 12px;
     font-weight: 600;
-    color: #C26969;
+    color: #1e1e1e;
     transition: all 0.3s ease;
     text-transform: uppercase;
 }
@@ -127,11 +135,11 @@ header{
     color: #0F1621;
 }
 .footer{
-    margin-top: 700px;
     background-color: #0F1621;
     width: 100%;
-    height: 80px;
-    position: static;
+    height: 50px;
+    position: relative;
+    bottom: 0px;
 }
 @media(max-width: 1200px){
     .description-text{

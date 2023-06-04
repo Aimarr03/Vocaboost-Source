@@ -1,20 +1,14 @@
-document.addEventListener("DOMContentLoaded", function() {
-    const menuItems = document.querySelectorAll(".menu-item");
-  
-    menuItems.forEach(function(item) {
-      item.addEventListener("click", function() {
-        const submenu = this.querySelector(".sub01-menu");
-        submenu.classList.toggle("show");
-      });
-    });
-  });  
-  document.addEventListener("DOMContentLoaded", function() {
-    const menuItems = document.querySelectorAll(".sub01-menu");
-  
-    menuItems.forEach(function(item) {
-      item.addEventListener("click", function() {
-        const submenu = this.querySelector(".submenu02-menu");
-        submenu.classList.toggle("show");
-      });
-    });
-  }); 
+const menuItems = document.querySelectorAll('.menu-item');
+
+menuItems.forEach(menuItem => {
+  menuItem.addEventListener('click', (event) => {
+    const subMenu = menuItem.querySelector('.sub-menu');
+    
+    if (subMenu && subMenu.contains(event.target)) {
+      // Clicked element is within the sub-menu, do not toggle the 'expanded' class
+      return;
+    }
+    
+    menuItem.classList.toggle('expanded');
+  });
+});

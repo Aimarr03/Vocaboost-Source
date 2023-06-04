@@ -2,7 +2,7 @@
 <html>
     <header>
         <link rel = "stylesheet" href ="css/general.css">
-        <link rel = "stylesheet" href = "css/exercise_menu.css">
+        <link rel="stylesheet" href="css/learning_menu.css">
         <link rel="stylesheet"
       href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
       <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
@@ -12,10 +12,6 @@
       <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
     </header>
     <body>
-        <div class="search-box">
-            <button class = "search" type="submit"><i class="ri-search-line"></i></button>
-            <input class = "search-input" type="text" placeholder="Search" name="search">
-        </div>
         <div class="page-format">
             <div class="sidebar">
                 <div class="profile-section">
@@ -32,7 +28,7 @@
                   </li>
                   <li class="menu-item">
                     <i class="ri-edit-2-fill"></i>
-                    <a class="menu-item-title">Learning</a>
+                    <a class="menu-item-title" href="learning_menu.html">Learning</a>
                     <ul class="sub-menu">
                       <li class="menu-item">
                         <i class="ri-arrow-right-circle-line"></i>
@@ -60,7 +56,7 @@
                   </li>
                   <li class="menu-item">
                     <i class="ri-focus-2-line"></i>
-                    <a class="menu-item-title">Exercise</a>
+                    <a class="menu-item-title" href="exercise_menu.html">Exercise</a>
                   </li>
                   <li class="menu-item">
                     <i class="ri-team-fill"></i>
@@ -74,35 +70,25 @@
                 </ul>
               </div>
             <div class="content-page">
-                <h1 id = "title">Let's Practice!</h1>
-                <div class="menu-panel" id="normal-mode">
-                    <h4>NORMAL MODE</h4>
-                    <div class ="content-panel">
-                        <div class = "content-text">
-                            <p>Practice with what you have learned!</p>
-                        </div>
-                        <div class="difficulty-option">
-                            <a href = "#">Easy</a>
-                            <a href = "#">Medium</a>
-                            <a href = "#">Hard</a>
+                <h1 id = "title">Exapnd Your Knowledge!</h1>
+                <div class="content-manager">
+                    <div class="menu-panel" id="normal-mode">
+                        <h4>Grammar</h4>
+                        <h5>we offer a thorough understanding of the rules and structure of the language. Our materials cover elementary to intermediate levels, helping you learn basic concepts such as sentence structure, tenses, subject and predicate, and verb conjugation. You will also learn techniques and strategies for applying this grammar to your speech and writing. With a good understanding of grammar, you will be able to communicate more precisely and understand complex texts.</h5>
+                        <div class="arrow-icon">
+                            <i class="ri-arrow-right-fill"></i>
                         </div>
                     </div>
-                </div>
-                <div class="menu-panel" id="difficulty-mode">
-                    <h4>Challenge MODE</h4>
-                    <div class ="content-panel">
-                        <div class = "content-text">
-                            <p>Practice with what you have learned!</p>
-                        </div>
-                        <div class="difficulty-option">
-                            <a href = "#">Easy</a>
-                            <a href = "#">Medium</a>
-                            <a href = "#">Hard</a>
+                    <div class="menu-panel" id="normal-mode">
+                        <h4>Vocabulary</h4>
+                        <h5>broaden your choice of words by discovering new words out there, waiting to be discovered by you. We offer an opportunity for you to find new words that are interesting and useful in enriching your vocabulary. Through learning this vocabulary, you will experience a significant development in your English speaking skills and your confidence when communicating. So feel free to explore this exciting world of vocabulary and discover new words that will enrich your English skills. Benefit from a wider understanding of vocabulary and see how it will lead to a marked improvement in your English learning journey.</h5>
+                        <div class="arrow-icon">
+                            <i class="ri-arrow-right-fill"></i>
                         </div>
                     </div>
                 </div>
             </div>        
         </div>
-        <script src = "js/sidebar.js"></script>
+        <script src="js/sidebar.js"></script>
     </body>
 </html>
