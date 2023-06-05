@@ -2,6 +2,14 @@ html, body {
     margin: 0;
     padding: 0;
   }
+body{
+    background-color: #FFF59F;
+    background: linear-gradient(rgba(36, 121, 174, 0.6),rgba(108, 15, 57, 0.6)), url('main_menu.jpg') no-repeat;
+    background-size:100% 100vh;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
+}
 .daftar-soal{
     color: #f5f5f5;
     font-weight: 700;
@@ -58,7 +66,7 @@ html, body {
     border:#A6ABBD 1px solid;
     padding: 20px 40px;
     border-radius: 30px;
-    background-color: #f3f3f3;
+    background-color: rgba(240,240,240,0.6);
 }
 .exercise-container{
     display:flex;

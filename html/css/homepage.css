@@ -9,6 +9,8 @@
 body{
     background-color: #FFF59F;
     background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('nav-background.webp') no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 header{
     position: fixed;
@@ -26,6 +28,7 @@ header{
 }
 .navlist{
     display: flex;
+    transition: all 0.6 ease;
 }
 .navlist a{
     color: #F5F5F5;
@@ -37,6 +40,9 @@ header{
 }
 .navlist a:hover{
     border-bottom: 2px solid white;
+}
+.navlist i{
+    display: none;
 }
 .brand-logo{
     font-weight: 800;
@@ -144,12 +150,17 @@ header{
 @media(max-width: 1200px){
     .description-text{
         padding: 55px;
+        grid-template-columns: 2fr 3fr;
     }
     .description-image{
         width: 95%;
     }
     .description-box{
-        top: 120px;
+        margin-top: 10%;
+    }
+    .Second-Button{
+        width: 90%;
+        margin-top: 40px;
     }
 }
 @media(max-width: 1120px){
@@ -158,6 +169,12 @@ header{
     }
     .description-headline h5{
         margin-top: 12px;
+    }
+    .Start a{
+        padding: 12px 22px;
+    }
+    .Learn-More a{
+        padding: 12px 22px;
     }
 }
 @media(max-width: 980px){
@@ -174,7 +191,10 @@ header{
         background-color: #F5F5F5;
         display: flex;
         flex-direction: column;
-        padding: 50px 20px;
+        padding: 70px 20px 30px 20px;
+    }
+    .description-box{
+        margin-top: 15%;
     }
     .brand-logo{
         font-size: 24px;
@@ -187,7 +207,7 @@ header{
         right: 0;
     }
     .description-headline h5{
-        width: 90%;;
+        font-size: 13px;
     }
     .description-text{
         padding: 40px 40px 60px 40px;
@@ -197,12 +217,25 @@ header{
     .description-image img{
         width: 100%;
     }
+    .line-separator{
+        width: 100%;
+        height: 10px;
+    }
     .First-Button{
         margin-top: 30px;
     }
     .navlist a{
-        margin: 20px 0px 0px 0px;
         color: #0F1621;
+    }
+    .navlist li{
+        display: flex;
+        align-items: baseline;
+        margin-left: 20px;
+        margin-bottom:  30px;
+    }
+    .navlist i{
+        font-size: 40px;
+        display: block;
     }
     .navlist a:hover{
         border-bottom: 2px solid #0F1621;
@@ -212,23 +245,18 @@ header{
         height: 65%;
         top: 165px;
     }
-    .footer{
-        margin-top: 0;
-        position:absolute;
+    .Start a{
+        padding: 10px 20px;
+    }
+    .Learn-More a{
+        padding: 10px 20px;
+    }
+}
+@media (max-width: 910px) {
+    .footer {
+        position: fixed;
         bottom: 0;
+        width: 100%; /* Optional: Set the width of the footer if needed */
     }
 }
-@media(max-width: 800px){
-    .description-box{
-        top: 160px;
-    }
-    .description-text{
-        padding: 40px 40px 0 40px;
-    }
-    .description-headline h5{
-        font-size: 40px;
-    }
-}
-@media(max-width: 360px){
-   
-}
+
