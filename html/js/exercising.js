@@ -129,6 +129,7 @@ const text = "\tOften people use the term personality as an easy way of explaini
     if(document.body.scrollHeight<=740){
       confirmationPanel.style.bottom = "-1%";
     }
+    
     if(document.body.scrollHeight<=1180){
       confirmationPanel.style.bottom = "-2%";
     }

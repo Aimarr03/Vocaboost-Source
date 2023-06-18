@@ -8,9 +8,11 @@
 }
 body{
     background-color: #FFF59F;
-    /* background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)), url('nav-background.webp') no-repeat; */
-    background-size: cover;
-    background-position: center;
+    background: linear-gradient(rgba(1, 53, 6, 0.8), rgba(5, 90, 120, 0.60)), url('main_menu.jpg') no-repeat;
+    background-size: auto 100vh;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-attachment: fixed;
 }
 header{
     position: fixed;
@@ -29,11 +31,16 @@ header{
 h2{
     font-size: 40px;
     margin-bottom: 20px;
+    color: #F5F5F5;
 }
 h5{
     text-align: justify;
-    font-size: 16px;
-    font-weight: 300;
+    font-size: 20px;
+    font-weight: 200;
+    color: #F5F5F5;
+}
+.member h5{
+    color: #0F1621;
 }
 .navlist{
     display: flex;
@@ -86,6 +93,14 @@ h5{
     margin-bottom: 100px;
     left: 60%;
 }
+.our-goal li{
+    list-style-type:decimal;
+    margin-top: 5px;
+    text-align: justify;
+}
+.our-goal ol{
+    margin: 10px 40px;
+}
 .our-team{
     width: 80%;
     margin: 50px auto;
@@ -93,7 +108,8 @@ h5{
 }
 .image-container{
     height: 420px;
-    background-color: #F5F5F5;
+    width: 420px;
+    background-color: #6d6d6d;
     border-radius: 25px;
     margin-bottom: 30px;
 }
@@ -103,25 +119,32 @@ h5{
     justify-content: space-between;
     columns: 30px;
     align-items: flex-start;
+    column-gap: 30px;
 }
 .member{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 160px;
-    background-color: #F5F5F5;
+    width: 200px;
+    background-color: rgba(240,240,240,0.75);
     padding: 20px 30px;
+    height: 280px;
+    transition: all 0.3s ease;
+}
+.member:hover{
+    transform: translateY(-5px);
 }
 .member-image{
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    background-color: #F5F5F5;
+    background-color: #c4c4c4;
     margin: 0px auto;
 }
 .member h5{
     margin-top: 20px;
     text-align: center;
+    
 }
 .contact-us{
     width: 40%;
@@ -140,6 +163,36 @@ h5{
     row-gap: 30px;
     grid-template-columns: repeat(4, 1fr);
     justify-content: center;
+    color: #F5F5F5;
+    
+}
+.member-image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.contact-icons i{
+    transition: 0.3s ease all;
+}
+.contact-icons i:hover {
+    transform:  translate(-3px,-3px);
+    text-shadow: 2px 2px 4px #0F1621;
+    cursor: pointer;
+}
+.contact-member{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+}
+.contact-member i{
+    font-size: 24px;
+    transition: all 0.3s ease;
+}
+.contact-member i:hover{
+    cursor: pointer;
+    transform: translate(-3px,-3px);
+    text-shadow: 1px 1px #54647d;
 }
 .footer{
     background-color: #0F1621;
@@ -196,5 +249,104 @@ h5{
     }
     .navlist a:hover{
         border-bottom: 2px solid #0F1621;
+    }
+}
+@media only screen and (min-height: 1180px){
+    .main-content{
+        margin-top: 30%;
+    }
+    h2{
+        font-size: 40px;
+    }
+    .about-us{
+        width: 70%;
+        margin-bottom: 150px;
+    }
+    .our-goal{
+        width: 65%;
+        left:30%;
+        text-align: right;
+    }
+    .about-us h5{
+        font-size: 24px;
+    }
+    .our-goal h5{
+        font-size: 24px;
+    }
+    .our-team{
+        margin: 0;
+        width: 100%;
+    }
+    .team-member{
+        margin: 20px auto;
+    }
+    .contact-us{
+        width: 60%;
+    }
+    .contact-us h2{
+        font-size: 64px;
+    }
+    .our-team h2{
+        font-size: 64px;
+        margin-bottom: 40px;
+    }
+    .member{
+        justify-content: space-between;
+    }
+    .contact-icons{
+        column-gap: 60px;
+    }
+    .member h5{
+        margin-top: 0;
+    }
+    .contact-icons i{
+        font-size: 80px;
+    }
+    .member h5{
+        font-weight: 600;
+        font-size: 16px;
+    }
+    .contact-member{
+        margin-top: 20px;
+    }
+    .contact-member i{
+        font-size: 24px;
+    }
+    .member-image{
+        width: 120px;
+        height: 120px;
+    }
+}
+@media only screen and (min-height: 740px){
+    .our-goal{
+        left: 0%;
+        width: 70%;
+    }
+    .our-goal h2{
+        text-align: left;
+    }
+    .footer{
+        height: 100px
+    }
+    .team-member{
+        flex-wrap: wrap;
+        row-gap: 80px;
+    }
+    .member
+    {
+        flex-basis: 40%;
+    }
+    .member h5{
+        font-size: 24px;
+    }
+    .member-image{
+        width: 130px;
+        height: 130px;
+    }
+    .contact-member{
+        margin-top: 0px;
+    }
+    .contact-member i{
+        font-size: 32px;
     }
 }

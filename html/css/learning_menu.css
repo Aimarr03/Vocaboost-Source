@@ -170,3 +170,75 @@ body{
     border: 2px solid #0F1621;
     color: #0F1621;
 }
+@media only screen and (min-height: 1180px){
+    .content-manager{
+        flex-direction: column;
+        row-gap: 40px;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        align-content: space-between;
+    }
+    .menu-panel{
+        width: 100%;
+        height: 35vh;
+        min-height: 0;
+    }
+    .menu-panel h4{
+        font-size: 32px;
+    }
+    .menu-panel h5{
+        font-size: 16px;
+    }
+    #profile-picture{
+        width: 80%;
+    }
+    .profile-section{
+        padding-right: 5px;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .profile-data{
+        text-align: center;
+    }
+    #name{
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    #email{
+        font-size: 16px;
+    }
+    .menu-item{
+        align-content: center;
+    }
+    .menu-item i{
+        font-size: 40px;
+    }
+    .menu-item-title{
+        font-size: 28px;
+        margin-left: 20px;
+    }
+    .sidebar-menu li{
+        margin-bottom: 40px;
+    }
+    .sub-menu li{
+        margin-left: 0px;
+    }
+    .sub-menu .menu-item a{
+        font-size: 20px;
+    }
+    .sub-menu .menu-item i{
+        font-size: 32px;
+    }
+    .sub-menu li.menu-item{
+        margin-bottom: 10px;
+    }
+    .sub-menu.sub02 .menu-item a.menu-item-title {
+        margin-left: 40px;
+    }
+    .content-page{
+        margin-top: 120px;
+    }
+    #title{
+        margin-bottom: 60px;
+    }
+}
