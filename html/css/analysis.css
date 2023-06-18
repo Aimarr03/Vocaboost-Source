@@ -103,3 +103,68 @@ body{
     color:rgb(214, 80, 255);
     font-weight: 600;
 }
+button.next-prev i{
+    display: none;
+}
+@media only screen and (min-height: 1180px) {
+    #text-container{
+        font-size: 24px;
+    }
+    h1{
+        text-align: center;
+    }
+    .explanation h3{
+        font-size: 24px;
+    }
+    #question{
+        font-size: 20px;
+    }
+    #answer{
+        font-size: 20px;
+    }
+    #explanation-content{
+        font-size: 20px;
+    }
+    .nav.next-prev{
+        font-size: 20px;
+    }
+}
+@media only screen and (min-height: 740px){
+    #text-container{
+        padding: 10px 20px;
+        font-size: 18px;
+    }
+    .content-panel{
+        padding: 40px 60px;
+    }
+    .container{
+        margin-top: 40px;
+        padding: 20px 50px;
+        font-size: 12px;
+    }
+    #question{
+        font-size: 14px;
+    }
+    #answer{
+        font-size: 14px;
+    }
+    #current{
+        font-size: 48px;
+    }
+    .nav-text{
+        display: none;
+    }
+    .nav.next-prev i{
+        display: block;
+        font-size: 96px;
+    }
+    .next-prev{
+        text-decoration: none;
+    }
+    .nav #current-question{
+        font-size: 64px;
+    }
+    .nav #max-question{
+        font-size: 64px;
+    }
+}

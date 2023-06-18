@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html>
-    <div class="background"></div>
-    <header>
-        <link rel="stylesheet" href="css/general.css">
+    <head>
         <link rel="stylesheet" href="css/navbar.css">
-        <link rel="stylesheet" href="css/main_menu.css">
+        <link rel="stylesheet" href="css/profile.css">
         <link rel="stylesheet"
         href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
         <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
@@ -12,7 +10,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-    </header>
+    </head>
     <body>
         <header>
             <a href="homepage.html" class = "brand-logo">Vocaboost</a>
@@ -22,50 +20,34 @@
               <li><i class="ri-focus-2-line"></i><a href = "learning_menu.html">Learning</a></li>
               <li><i class="ri-team-fill"></i><a href = "about_us.html">About us</a></li>
               <div id="line-seperator"></div>
-              <li><i class="ri-user-fill"></i><a href = "#">Aimar</a></li>
+              <li><i class="ri-user-fill"></i><a href = "profile.html" id ="account-status">Aimar</a></li>
             </ul>
             <div id="menu-icon-container">
               <div class = "bx bx-menu" id="menu-icon"></div>
             </div>
         </header>
-            <div class="menu">
-                <h2>Main Menu</h2>
-                    <div class="main-options-container" id="exercise">
-                        <div class="main-options">
-                            <h3>Exercise</h3>
-                            <p>If you feel that just learning is not satisfying enough?? 
-                                <br>Don't worry, we have the perfect solution for you! 
-                                <br>Challenge yourself with various exciting and adrenaline-pumping modes and difficulty levels, starting from:
-                            </p>
-                            <ul class="explanation-01">
-                                <li>
-                                    normal mode which provides enough challenge
-                                </li>
-                                <li>
-                                    challenge mode that will test your limits. 
-                                </li>
-                            </ul>
+        <div class="main-content">
+            <div class="profile-data">
+                <div class="profile-bio">
+                    <div class="profile-highlight">
+                        <div class="profile-picture">
+                            <img src="" alt="" id="picture">
+                            <button id="change-picture">Change Picture....</button>
+                            <button id="update-profile"><a href="update_profile.html">Update Profile</a></button>
                         </div>
-                        <div class="main-options" id ="learning">
-                            <h3>Learning</h3>
-                            <p>Feeling stuck with your English progress,
-                                <br>Don't worry, We provide a variety of materials that can help you improve your English skills, from beginner to intermediate level. 
-                                <br>We provide a variety of materials that cover various aspects of the English language. Whether you want to
-                            </p>
-                            <ul class ="explanation-01">
-                                <li>Strengthen your grammar understanding</li>
-                                <li>Expand your vocabulary, or 
-                                </li>
-                                <li>Improve your reading comprehension</li>
-                            </ul>
+                        <div class="profile-headline">
+                            <h2 id="username">Username</h2>
+                            <h6 id ="email">andyaimar729@gmail.com</h6>
                         </div>
                     </div>
-            </div>
-            <div class="history-activity-container">
-                <div class="history-description">
-                    <h2>History Activity</h2>
-                    <a href="">view all</a>
+                    <div class="profile-main-data">
+                        <h3>Name: <span id ="name">Andy Aimar Rasyeed</span></h3>
+                        <h3>Education: <span id ="education">SMAN 42 JAKARTA</span></h3>
+                    </div>
                 </div>
+            </div>
+            <div class="history-activity">
+                <h2>History Activity</h2>
                 <div class="activities">
                     <div class="history">
                         <div class="column-01" >
@@ -123,8 +105,9 @@
                     </div>
                 </div>
             </div>
-            <div class="footer"></div>
-            <script src="js/main_menu.js"></script>
-            <script src="js/navbar.js"></script>
+        </div>
+        <button id="log-out">Log Out</button>
+        <div class="footer"></div>
+        <script src="js/navbar.js"></script>
     </body>
 </html>

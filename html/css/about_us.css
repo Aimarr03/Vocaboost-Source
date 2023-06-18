@@ -4,7 +4,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     text-decoration: none;
-
+    list-style: none;
 }
 body{
     background-color: #FFF59F;
@@ -72,6 +72,75 @@ h5{
     align-items: center;
     cursor: pointer;
 }
+.main-content{
+    margin: 150px auto;
+    width: 86%;
+}
+.about-us{
+    width: 40%;
+    margin-bottom: 50px;
+}
+.our-goal{
+    width: 40%;
+    position: relative;
+    margin-bottom: 100px;
+    left: 60%;
+}
+.our-team{
+    width: 80%;
+    margin: 50px auto;
+    text-align: center;
+}
+.image-container{
+    height: 420px;
+    background-color: #F5F5F5;
+    border-radius: 25px;
+    margin-bottom: 30px;
+}
+.team-member{
+    margin: 0px 25px 30px 25px;
+    display: flex;
+    justify-content: space-between;
+    columns: 30px;
+    align-items: flex-start;
+}
+.member{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 160px;
+    background-color: #F5F5F5;
+    padding: 20px 30px;
+}
+.member-image{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #F5F5F5;
+    margin: 0px auto;
+}
+.member h5{
+    margin-top: 20px;
+    text-align: center;
+}
+.contact-us{
+    width: 40%;
+    margin: 180px auto;
+}
+.contact-us h2{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.contact{
+    font-size: 48px;
+    text-align: center;
+}
+.contact-icons{
+    display: grid;
+    row-gap: 30px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+}
 .footer{
     background-color: #0F1621;
     width: 100%;
@@ -127,39 +196,5 @@ h5{
     }
     .navlist a:hover{
         border-bottom: 2px solid #0F1621;
-    }
-}
-@media only screen and (min-height: 740px){
-    .navlist{
-        padding: 80px 40px 60px 40px;
-    }
-    .navlist a{
-        font-size: 40px;
-    }
-    .navlist i{
-        font-size: 48px;
-    }
-    .navlist li{
-        margin-bottom: 40px;
-    }
-    .brand-logo{
-        font-size: 48px;
-    }
-    #menu-icon-container{
-    border-radius: 60px;
-    background-color: #C26969;
-    color: #0F1621;
-    width: 80px;
-    height: 80px;
-    }
-    #menu-icon{
-        padding-left: 10px;
-        padding-top: 10px;
-        font-size: 64px;
-        align-items: center;
-        cursor: pointer;
-    }
-    header{
-        padding: 50px 8%;
     }
 }

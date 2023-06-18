@@ -1,0 +1,154 @@
+.main-content{
+    width: 86%;
+    margin: 150px auto;
+}
+.join-us{
+    width: 50%;
+    text-align: justify;
+    margin-bottom: 50px;
+}
+#login-container{
+    margin-bottom: 50px;
+    width: 40%;
+}
+.input{
+    margin-bottom: 20px;
+}
+.input input{
+    width: 100%;
+    background-color: transparent;
+    border: 1px solid rgb(0,0,0);
+    padding: 6px 12px;
+    border-radius: 15px;
+}
+.input input:focus{
+    outline: none;
+}
+.submit-button{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    column-gap: 30px;
+    align-items:end;
+}
+.alternative{
+    background-color: transparent;
+    border: none;
+    font-size: 11px;
+    transition: all 0.3s ease;
+}
+.alternative:hover{
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: underline;
+    cursor: pointer;
+}
+.submit{
+    padding: 6px 40px;
+    background-color: #C26969;
+    border: 1.3px solid black;
+    border-radius: 3px;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0 6px 6px rgba(0,0,0, 0.5);
+    transition: all 0.3s ease;
+}
+.submit:hover{
+    box-shadow: none;
+    transform: translateY(3px);
+    cursor: pointer;
+}
+#signup-container{
+    display: none;
+    position: absolute;
+    right: 8%;
+    top: 0;
+    margin-top: 200px;
+    width: 36%;
+    margin-bottom: 200px;
+}
+.footer{
+    position: relative;
+    margin-top: 400px;
+}
+@media only screen and (min-height: 1180px){
+    .footer{
+        position: fixed;
+    }
+    .main-content{
+        margin-top: 250px;
+    }
+    #signup-container{
+        position: static;
+        margin-top: 0;
+        width: 100%;
+    }
+    #login-container{
+        width: 100%;
+    }
+    .input h4{
+        font-size: 24px;
+    }
+    .input input{
+        font-size: 20px;
+        margin-bottom: 16px;
+    }
+    .input{
+        margin-bottom: 60px;
+        width: 64%
+    }
+    .join-us{
+        width: 64%;
+    }
+    .join-us h2{
+        font-size: 48px;
+    }
+    .join-us p{
+        font-size: 24px;
+    }
+    .alternative{
+        font-size: 18px;
+        text-decoration: underline;
+    }
+    .submit{
+        font-size: 24px;
+        padding: 6px 70px;
+    }
+    .submit-button{
+        position: fixed;
+        bottom: 100px;
+        right: 10%;
+    }
+}
+@media only screen and (min-height: 740px){
+    .join-us{
+        text-align:  center;
+        width: 100%;
+        margin: 40px auto;
+    }
+    .join-us p{
+        padding: 0 24px;
+        font-size: 16px;
+    }
+    .input{
+        margin: 50px auto;
+        text-align: center;
+        width: 100%;
+    }
+    .input input{
+        font-size: 32px;
+    }
+    .input input:focus{
+        text-align: center;
+    }
+    .submit-button{
+        right: 8%;
+        column-gap: 64px;
+    }
+    .submit{
+        font-size: 36px;
+    }
+    .alternative{
+        font-size: 32px;
+    }
+}

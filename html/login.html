@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <header>
+        <link rel="stylesheet" href="css/navbar.css">
+        <link rel="stylesheet" href="css/login.css">
+        <link rel="stylesheet"
+        href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@3.2.0/fonts/remixicon.css" rel="stylesheet">
+        <!--Google Fonts-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    </header>
+    <body>
+        <header>
+            <a href="homepage.html" class = "brand-logo">Vocaboost</a>
+            <ul class = "navlist">
+              <li><i class="ri-home-4-fill"></i><a href = "main_menu.html">Home</a></li>
+              <li><i class="ri-edit-2-fill"></i><a href = "exercise_menu.html">Exercise</a></li>
+              <li><i class="ri-focus-2-line"></i><a href = "learning_menu.html">Learning</a></li>
+              <li><i class="ri-team-fill"></i><a href = "about_us.html">About us</a></li>
+              <div id="line-seperator"></div>
+              <li><i class="ri-user-fill"></i><a href = "#">Aimar</a></li>
+            </ul>
+            <div id="menu-icon-container">
+              <div class = "bx bx-menu" id="menu-icon"></div>
+            </div>
+        </header>
+        <div class="main-content">
+            <div class="content-container" id ="margin-modifier">
+                <div class="join-us">
+                    <h2>Join Us</h2>
+                    <p>Join us on this exciting journey and elevate your English language skills to new heights of proficiency and fluency!
+                    </p>
+                    <p>By joining us, you can embark on a transformative experience that will empower you to reach new levels of mastery in the English language.</p>
+                </div>
+                <div id="login-container">
+                    <div class="input">
+                        <h4>Username:</h4>
+                        <input type="text" id="login-username">
+                        <h4>Password:</h4>
+                        <input type="password" id ="login-password">
+                    </div>
+                    <div class="submit-button">
+                        <button id="go-signup" onclick="toggleForm('login')" class = "alternative">don't have an account?</button>
+                        <button id="login" class = "submit" onclick="login()">Log in</button>
+                    </div>
+                </div>
+            </div>
+            <div id="signup-container">
+                <div class="input">
+                    <h4>Name:</h4>
+                    <input type="text" id="signup-name">
+                    <div id="birth">
+                        <div>
+                            <h4>Birth Place:</h4>
+                            <input type="text" id="signup-birth-place">
+                        </div>
+                        <div>
+                            <h4>Birth Date:</h4>
+                            <input type="text" id="signup-birth-date">
+                        </div>
+                    </div>
+                    <h4>Education:</h4>
+                    <input type="text" id="signup-education">
+                    <h4>Username:</h4>
+                    <input type="text" id="signup-username">
+                    <h4>Password:</h4>
+                    <input type="password" id = "signup-password">
+                </div>
+                <div class="submit-button">
+                    <button id="go-login" onclick="toggleForm('signup')" class = "alternative">don't have an account?</button>
+                    <button id="signup" class ="submit" onclick="signup()">Sign Up</button>
+                </div>
+            </div>
+        </div>
+        <div class="footer"></div>
+        <script src="js/navbar.js"></script>
+        <script src = "js/toggle_login.js"></script>
+        <script src="js/login.js"></script>
+    </body>
+</html>

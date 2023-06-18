@@ -230,4 +230,89 @@ li{
 #no-button:hover{
     transform: translate(3px,3px);
     box-shadow:-1px -1px 3px #FAFBFF, 1px 1px 3px #A6ABBD;
+} 
+@media only screen and (min-height: 1180px){
+    .exercise-container{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        row-gap: 30px;
+        height: auto;
+    }
+    .text-container{
+        width: 100%;
+    }
+    .question-answer-nav{
+        width: 100%;
+    }
+    .content-container{
+        margin: 50px auto;
+        width: 90%;
+        padding: 30px 60px;
+    }
+    h3{
+        font-size: 32px;
+    }
+    h5{
+        font-size: 16px;
+    }
+    .timer-container{
+        display:flex;
+        flex-direction: row;
+        border-radius: 25px;
+        background-color: #248cc3;
+        padding: 10px 25px;
+        box-shadow: 0 2px 3px rgba(0,0,0,0.4) ;
+    }
+    .timer-container h4{
+        font-size: 16px;
+        color: #f5f5f5;
+    }
+    #time{
+        font-size: 16px;
+    }
+    .header-container{
+        margin-bottom: 32px;
+    }
+
+}
+@media only screen and (min-height: 740px){
+    #text{
+        font-size: 24px;
+    }
+    .question-content{
+        max-height: 40vh;
+        overflow-y: scroll;
+    }
+    .navigation-button i{
+        font-size: 40px;
+    }
+    .navigation-button button{
+        padding: 10px;
+    }
+    #answer-description h4{
+        font-size: 32px;
+    }
+    #question{
+        max-height: 300px;
+        font-size: 24px;
+    }
+    .option-button{
+        font-size: 24px;
+    }
+    #description-question{
+        font-size: 24px;
+    }
+    #yes-button{
+        font-size: 24px;
+    }
+    #no-button{
+        font-size: 24px;
+    }
+    .text-submit h4{
+        font-size: 24px;
+    }
+    .text-submit p{
+        font-size: 16px;
+    }
 }

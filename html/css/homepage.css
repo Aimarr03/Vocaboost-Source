@@ -252,11 +252,130 @@ header{
         padding: 10px 20px;
     }
 }
-@media (max-width: 910px) {
-    .footer {
+@media only screen and (min-height: 1180px)
+and (min-width:820px){
+    body{
+        background-size: auto 100vh;
+        background-position: center top;
+    }
+    .description-box{
+        height: 1050px;
+        margin-top: 200px;
+        padding: 40px 60px;
+    }
+    .footer{
+        padding-top: 120px;
         position: fixed;
-        bottom: 0;
-        width: 100%; /* Optional: Set the width of the footer if needed */
+    }
+    .brand-logo{
+        font-size: 40px;
+    }
+    header{
+        padding: 40px 8%;
+    }
+    #menu-icon-container{
+        border-radius: 40px;
+        background-color: #C26969;
+        color: #0F1621;
+        width: 85px;
+        height: 85px;
+    }
+    #menu-icon{
+        padding-left: 6px;
+        padding-top: 6px;
+        font-size: 72px;
+        align-items: center;
+        cursor: pointer;
+    }
+    .Second-Button{
+        display: none;
+    }
+    .First-Button{
+        margin: 40px auto;
+        display: flex;
+        column-gap: 30px;
+        text-align: center;
+    }
+    .description-text{
+        grid-template-columns: 1fr;
+    }
+    .description-headline{
+        text-align: center;
+    }
+    .description-headline h2{
+        font-size: 48px;
+    }
+    .description-headline h5{
+        margin: 10px auto;
+        font-size: 20px;
+        width: 80%;
+    }
+    .description-image{
+        text-align: center;
+    }
+    .Start a{
+        font-size: 28px;
+        font-weight: bolder;
+        padding: 20px 35px;
+    }
+    .Learn-More a{
+        font-size: 28px;
+        font-weight: bolder;
+        padding: 20px 35px;
     }
 }
+@media only screen and (min-height: 740px) {
+    .description-box{
+        height: 1600px;
+        margin-top: 23%;
+        padding: 60px 80px;
+    }
+    .description-text{
+        padding: 0;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .description-headline{
+        justify-content: flex-start;
+    }
+    .description-headline h2{
+        font-size: 80px;
+        line-height: 96px;
+    }
+    .description-headline h5{
+        font-size: 28px;
+    }
+    .First-Button{
+        justify-content: center;
+    }
+    .description-image img{
+        text-align: center;
+    }
+    .navlist a{
+        margin-left: 64px;
+        font-weight: 300;
+        font-size: 54px;
+    }
+    .navlist li{
+        display: flex;
+        align-items: baseline;
+        margin-left: 50px;
+        margin-bottom: 60px;
+    }
+    .navlist i{
+        font-size: 64px;
+        display: block;
+    }
+    .navlist{
+        background-color: rgba(230,230,230,0.96);
+        padding: 70px 20px 100px 20px;
+    }
+    .brand-logo{
+        font-size: 54px;
+    }
 
+}

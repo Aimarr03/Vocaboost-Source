@@ -35,11 +35,14 @@ function done() {
 
     question.style.marginBottom = "5px";
     explanation_content.style.fontWeight ="400";
-    explanation_content.style.fontSize = "14px";
     explanation_content.style.textAlign = "justify";
-
+    if(document.body.scrollHeight<=1180){
+      explanation_content.style.fontSize = "16px";
+    
+    }else{
+      explanation_content.style.fontSize = "20px"; 
+    }
     text.style.textAlign = "justify";
-
     const ul = document.createElement('ul');
     ul.style.listStyle = "circle";
     currentChoiceData.options.forEach((element, index) => {

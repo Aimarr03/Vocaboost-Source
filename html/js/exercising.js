@@ -126,7 +126,15 @@ const text = "\tOften people use the term personality as an easy way of explaini
   function submission(){
     const confirmationPanel = document.getElementById("submit-button");
     const backgroundEffect = document.getElementById("darker-background");
-    confirmationPanel.style.bottom = "-7%";
+    if(document.body.scrollHeight<=740){
+      confirmationPanel.style.bottom = "-1%";
+    }
+    if(document.body.scrollHeight<=1180){
+      confirmationPanel.style.bottom = "-2%";
+    }
+    else{
+      confirmationPanel.style.bottom = "-3%";
+    }
     backgroundEffect.style.display = "block";
   }
   function returnQuiz(){

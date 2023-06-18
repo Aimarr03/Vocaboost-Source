@@ -47,6 +47,9 @@ h1{
     align-content: space-between;
     justify-content: space-between;
 }
+ul.result-data{
+    list-style-type: none;
+}
 .result-data li{
     width: 100%;
     padding: 20px 35px;
@@ -73,4 +76,30 @@ h1{
 #check-correct-answer:hover{
     transform: translateY(10px);
     box-shadow: none;
+}
+@media only screen and (min-height: 740px){
+    .content-panel{
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        row-gap: 60px;
+    }
+    .image{
+        width: 60%;
+        height: 35%;
+        margin: 0 auto;
+    }
+    .content-panel h1{
+        text-align: center;
+    }
+    .result-data{
+        row-gap: 30px;
+    }
+    .result-data li{
+        width: 100%;
+        padding: 20px 35px;
+        background-color: #f5f5f5;
+        font-weight: 800;
+        font-size: 24px;
+    }
 }
